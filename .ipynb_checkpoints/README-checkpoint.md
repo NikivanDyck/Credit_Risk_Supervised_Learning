@@ -12,17 +12,17 @@ To manage this, we completed two data reviews: 1) using a logistic regression mo
 ## Results
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
-* Machine Learning Model 1/ LogisticRegression
+*Machine Learning Model 1/ LogisticRegression
   * Model 1 uses data as presented with an underrepresented number of negative results.    
   * Accuracy of predicting positive(yes) healthy loan status is 99%, and predicted negative(no) high risk is 91%,
   * Precision of Yes is 100%, the Precision of No 85%
   * Recall of Yes 99%, No 91%
 
-* Machine Learning Model 2 / LogisticRegression with OverSampledData
- * Model 2 uses an equal number of positive and negative results by adding an equal number of negative results into the data set to sample  
-* Accuracy of predicting positive(yes) healthy loan status is 99%, and predicted negative(no) high risk is 99% 
-* Precision of Yes is 99%, the Precision of No 99%  
-* Recall of Yes 99%, No 99%
+*Machine Learning Model 2 / LogisticRegression with OverSampledData
+ * Model 2 uses an equal number of positive and negative results by adding an equal number of negative results into the data set
+ * Accuracy of predicting positive(yes) healthy loan status is 99%, and predicted negative(no) high risk is 99% 
+ * Precision of Yes is 99%, the Precision of No 99%  
+ * Recall of Yes 99%, No 99%
 
 ---
 ## Summary
