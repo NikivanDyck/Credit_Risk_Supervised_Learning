@@ -26,8 +26,7 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 ---
 ## Summary
-Balancing the data sets by adding at-risk loans created a model that has 99% accuracy for both healthy and at-risk loans.   The precision of predicting healthy loans changed from 100% in Model 1 to 99% in Model 2.   
-Credit risk and default rates can increase overall risk in loan defaults; Machine Learning Model 2 Logistic Regression with Oversampled Data allows for more accurate results on this high-risk classification of customer while having little to no impact on health loan results.   
+Balancing the data sets by adding at-risk loans created a model that has 99% accuracy for both healthy and at-risk loans.   The precision of predicting healthy loans changed from 100% in Model 1 to 99% in Model 2, and the precision of predicting high risk loans changed from 85% in Model 1, to 99% in Model 2. High-risk loans can indicate increased loan defaults; Machine Learning Model 2 using oversampled data allows for more accurate results on this high-risk classification of customer while having little to no impact on healthy loans.   
 
 
 Please refer to "Notes" within this git notebook to learn more about types of Supervised Machine Learning and what they do, or understand more about the definitions of principles discussed in this review.  
