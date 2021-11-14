@@ -1,34 +1,33 @@
-# Module 12 Report Template
+# Credit Risk via Supervised Machine Learning
+Module 12
 
+---
 ## Overview of the Analysis
+The analysis presented was to review historical lending data and build a model that can identify the creditworthiness of borrowers. The data attributes of loan size, interest rate, borrower income, debt to income, number of accounts, derogatory marks, total debt were compared against the loan status (healthy vs. high risk).   Separate test data was held back and later compared against machine learning results to validate results.  
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
+One of the challenging aspects of this data set is more positive loan status vs. negative status. 
+To manage this, we completed two data reviews: 1) using a logistic regression model (please see notes for additional information about models) on the original data and 2) applying the logistic regression model after oversampling.   
 
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
-
+---
 ## Results
-
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+* Machine Learning Model 1/ LogisticRegression
+  * Model 1 uses data as presented with an underrepresented number of negative results.    
+  * Accuracy of predicting positive(yes) healthy loan status is 99%, and predicted negative(no) high risk is 91%,
+  * Precision of Yes is 100%, the Precision of No 85%
+  * Recall of Yes 99%, No 91%
 
+* Machine Learning Model 2 / LogisticRegression with OverSampledData
+ * Model 2 uses an equal number of positive and negative results by adding an equal number of negative results into the data set to sample  
+* Accuracy of predicting positive(yes) healthy loan status is 99%, and predicted negative(no) high risk is 99% 
+* Precision of Yes is 99%, the Precision of No 99%  
+* Recall of Yes 99%, No 99%
 
-
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
-
+---
 ## Summary
+Balancing the data sets by adding at-risk loans created a model that has 99% accuracy for both healthy and at-risk loans.   The precision of predicting healthy loans changed from 100% in Model 1 to 99% in Model 2.   
+Credit risk and default rates can increase overall risk in loan defaults; Machine Learning Model 2 Logistic Regression with Oversampled Data allows for more accurate results on this high-risk classification of customer while having little to no impact on health loan results.   
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
 
-If you do not recommend any of the models, please justify your reasoning.
-
-Please refer to "Notes" to know more about types of Supervised Machine Learning and what they do, or understand more about the definitions of principles discussed in this review.  
-
+Please refer to "Notes" within this git notebook to learn more about types of Supervised Machine Learning and what they do, or understand more about the definitions of principles discussed in this review.  

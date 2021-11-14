@@ -17,6 +17,31 @@ In finance, we can use regression to predict prices, dividends, rates, or any ot
 
 Examples of when to use:  Find a stock price, Find The first day’s return on an initial public offering -IPO, Find a daily return over 20%
 
+### Logistic Regression vs. Linear Regression
+Two of the most commonly used regression models are linear regression and logistic regression.  Both types of regression models are used to quantify the relationship between one or more predictor variables and a response variable, but there are some key differences between the two models:
+
+A linear regression model is used when the response variable takes on a continuous value such as:
+ * Price
+ * Height
+ * Age
+ * Distance
+
+Linear regression predicts a continuous value as the output. For example:
+ * Price ($150, $199, $400, etc.)
+ * Height (14 inches, 2 feet, 94.32 centimeters, etc.)
+ * Age (2 months, 6 years, 41.5 years, etc.)
+ * Distance (1.23 miles, 4.5 kilometers, etc.)
+
+logistic regression model is used when the response variable takes on a categorical value such as:
+ * Yes or No
+ * Male or Female
+ * Win or Not Win
+
+logistic regression predicts probabilities as the output. For example:
+ * 40.3% chance of getting accepted to a university.
+ * 93.2% chance of winning a game.
+ * 34.2% chance of a law getting passed.
+
 ### Classification
 Classification algorithms are used to predict discrete outcomes. For example, say that we want to use a person's traits, such as age, income, and geographic location, to predict how the person will vote on a particular issue. The outcome is finite, with two possibilities in this case—whether the person will vote Yes or No. The classification model will try to learn patterns from the data and, if successful, gain the ability to make accurate predictions for new voters.
 
@@ -43,7 +68,7 @@ I found using plot_metric was great in displaying results in useful visualizatio
 ---
 
 ## Outcome: 
-Jupyter notebook "credit_risk_resampling" contains data preparations, analysis, and visualizations. Definition of key theories, and measurements used are noted in the appendix.
+Jupyter notebook "credit_risk_resampling" contains data preparations, analysis, and visualizations. Definition of key theories, and measurements used are noted in the appendix below.
 
 ---
 
