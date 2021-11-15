@@ -85,7 +85,14 @@ List of terms definitions and code used to complete the analysis
 |Predict | Applying trained model to predict data that it's reviewed before, and if sucessfull to new data | Preducting furture results | ---|
 | Overfitting | Means that the model is so good at predicting the correct target for the training data that it won’t perform well on new data that it wasn't trained on. And while the model performed well on testing data, it may not perform well on other datasets. |--- |
 |Confusion Matrix |A table that is often used to describe the performance of a classification model (or "classifier") on a set of test data for which the true values are known. | Displays how well the model is working | https://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/ |
+|Over Sampling|Creating more instances of a class label, usually for the smaller class. |Synthetic minority oversampling technique (SMOTE) | -- |
+|Under Sampling|Creating fewer instances of a class label, usually for the larger class. | Cluster centroid | -- | 
+|Combination Sampling| |SMOTE and edited nearest neighbors (ENN), or SMOTEENN | |
 
 Diagram of how to read a confustion Matrix
 
 ![confusion matrix](https://www.dataschool.io/content/images/2015/01/confusion_matrix2.png)
+
+Link to skLearn
+https://scikit-learn.org/stable/
+
